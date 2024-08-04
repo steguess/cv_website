@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <title>Stephanie Gessler</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,19 +37,67 @@
 </head>
 
 <style>
- 
- .portfolio-title {
-            color:#18d26e;/* Adjust color as needed for contrast */
-        }
+  .portfolio-details-slider img {
+      width: 70%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      align-content: center;
+  }
+  .portfolio-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: white/* Adjust color as needed for contrast */
+  }
 
   .section-header {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
       color: #18d26e; /* Adjust for contrast */
   }
 
+  .project-info {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #e0e0e0; /* Light grey for better readability on dark background */
+  }
+
+  .project-details {
+      margin-left: 1.5rem;
+  }
+
+  .project-details li {
+      margin-bottom: 0.75rem;
+  }
+  
+  .no-space {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+  }
+  
+  .portfolio-info ul {
+      padding-left: 0;
+      list-style: none;
+  }
+
+  .portfolio-info ul li {
+      margin-bottom: 10px;
+      color: #fff;
+  }
+
+  .portfolio-info ul li strong {
+      color: #18d26e; /* Green color for headers */
+  }
 
   .portfolio-info h3, .portfolio-info h4 {
       color: #18d26e; /* Green color for headers */
   }
+</style>
+
 </style>
 
 <body>
@@ -63,50 +111,87 @@
       <div class="row">
 
         <div class="col-lg-8">
-          <h2 class="portfolio-title">Project Portfolio: Predictive Maintenance for Reciprocating Compressors</h2>
-
+          <h2 class="portfolio-title">Forest Cover Type Prediction</h2>
           <div class="portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-
+            <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/gascompressor.jpg" alt="" style="max-width: 100%; height: auto;">
+                <img src="assets/img/portfolio/tree_types.png" alt="Dashboard Image">
               </div>
-
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/satellite2 (1).png" alt="Dashboard Image">
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
         </div>
 
-        <div class="col-lg-4 portfolio-info">
-          <h3>Predictive Maintenance for Reciprocating Compressors</h3>
-          <ul>
-            <li><strong>Category</strong>: Machine Learning and Predictive Maintenance</li>
-            <li><strong>Client</strong>: Repsol</li>
-            <li><strong>Project date</strong>: June 2023</li>
-          </ul>
-
-          <h4>Description:</h4>
-          <p>This project focused on implementing a machine learning-based predictive maintenance (PdM) strategy for reciprocating compressors, critical equipment in the gas industry. The main objectives were to avoid breakdowns, optimize maintenance, and improve performance.</p>
-
-          <h4>Key Achievements:</h4>
-          <ul>
-            <li><strong>Data Collection and Preparation:</strong> Processed hourly operational data from multiple compressors over two years, including both normal and failure periods.</li>
-            <li><strong>Model Development:</strong> Trained 25 unsupervised machine learning models for anomaly detection, including traditional methods (Isolation Forest, PCA, ICA) and deep learning methods (LSTM, Autoencoders, Transformers).</li>
-            <li><strong>Severity Classification:</strong> Classified anomalies into four levels – Low, Medium, High, Severe.</li>
-            <li><strong>Proof of Concept (POC):</strong> Developed a real-time streaming POC integrating sensor data ingestion to dashboard visualization, enabling proactive maintenance and operational improvement.</li>
-          </ul>
-
-          <h4>Results:</h4>
-          <p>Demonstrated the potential to significantly reduce downtime and improve compressor availability through advanced predictive maintenance techniques.</p>
-
-          <p>By leveraging machine learning for predictive maintenance, this project showcases the application of advanced data analytics and modeling to enhance the reliability and efficiency of critical industrial equipment.</p>
-        </div>
-
+      <div class="col-lg-4">
+          <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul class="custom-list no-space">
+                  <li><strong>Category:</strong> Machine Learning and Classification</li>
+                  <li><strong>Project Date:</strong> Ongoing</li>
+                  <li><strong>Project URL:</strong> <a href="https://github.com/callysthenes/forest_cover_type_detector?tab=readme-ov-file" target="_blank">GitHub Repository</a></li>
+              </ul>
+              <h3>Description:</h3>
+              <p>This project involves solving a classification problem from the Kaggle competition "Forest Cover Type Prediction." The objective is to predict the predominant type of tree cover from cartographic variables. The dataset represents patches in the Roosevelt National Forest, Colorado.</p>
+              <h3>Key Achievements:</h3>
+              <ul class="custom-list">
+                  <li><strong>Data Analysis:</strong>
+                      <ul class="custom-list">
+                          <li>Conducted an in-depth analysis of the dataset, including exploration of data types, shape, and descriptive statistics.</li>
+                          <li>Explained the relevance of variables, such as wilderness area and soil type designations.</li>
+                      </ul>
+                  </li>
+                  <li><strong>Feature Engineering:</strong>
+                      <ul class="custom-list">
+                          <li>Performed outlier detection and treatment, feature transformations, and created new features.</li>
+                          <li>Grouped soil types based on USFS ecological land type units and geological zones.</li>
+                      </ul>
+                  </li>
+                  <li><strong>Feature Selection:</strong>
+                      <ul class="custom-list">
+                          <li>Employed feature selection techniques like correlation analysis, filter methods, and recursive feature elimination to improve model performance and reduce overfitting.</li>
+                      </ul>
+                  </li>
+                  <li><strong>Model Building:</strong>
+                      <ul class="custom-list">
+                          <li>Implemented and evaluated several machine learning algorithms, including:
+                              <ul class="custom-list">
+                                  <li>Decision Trees</li>
+                                  <li>XGBoost</li>
+                                  <li>Extra Tree Classifier</li>
+                                  <li>Random Forest</li>
+                                  <li>K-Nearest Neighbors (KNN)</li>
+                                  <li>Support Vector Machine (SVM)</li>
+                                  <li>Naive Bayes</li>
+                                  <li>Logistic Regression</li>
+                                  <li>Ensemble Methods</li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><strong>Dimensionality Reduction:</strong>
+                      <ul class="custom-list">
+                          <li>Explored techniques like PCA (Principal Component Analysis) and LDA (Linear Discriminant Analysis) to reduce dimensionality and assess their impact on model performance.</li>
+                      </ul>
+                  </li>
+                  <li><strong>Final Submission:</strong>
+                      <ul class="custom-list">
+                          <li>Detailed the final model used for prediction and provided instructions for making predictions on the test set.</li>
+                          <li>Included guidelines for submitting predictions to the Kaggle competition.</li>
+                      </ul>
+                  </li>
+              </ul>
+              <h3>Summary:</h3>
+              <p>This project demonstrates the application of various machine learning techniques to a classification problem in predicting forest cover types. It encompasses data analysis, feature engineering, model building, and evaluation, culminating in a robust predictive model for forest cover type classification.</p>
+          </div>
       </div>
 
-    </div>
-  </div><!-- End Portfolio Details -->
+  </div>
+
+</div>
+</div><!-- End Portfolio Details -->
   </main><!-- End #main -->
 
   <!-- Vendor JS Files -->
