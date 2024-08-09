@@ -959,16 +959,13 @@ I had the pleasure of working with Stephanie on several occasions during our Mas
         <div class="form-group mt-3">
           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
         </div>
-        
-        <!-- Optionally, you can keep the loading and error messages if you have JavaScript handling these states -->
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        
+      
+        <!-- Add this hidden field to specify the redirect URL -->
+        <input type="hidden" name="_next" value="ThankYou.html">
+      
         <div class="text-center"><button type="submit">Send Message</button></div>
       </form>
+      
             
 
   <!--    <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
