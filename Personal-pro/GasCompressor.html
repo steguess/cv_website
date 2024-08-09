@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Stephanie Gessler - Big Data & Analytics Expert</title>
+  <meta name="description" content="Stephanie Gessler is a seasoned Big Data & Analytics Expert specializing in advanced data analytics, machine learning, and business intelligence solutions. Discover her portfolio, skills, and professional achievements in the field of data science and analytics.">
+  <meta name="keywords" content="Stephanie Gessler, Big Data, Analytics Expert, Data Science, Machine Learning, Business Intelligence, Data Engineering, SQL, Python, Cloud Data Platforms, Data Visualization, Portfolio, Professional Experience">
+  
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -37,90 +38,104 @@
 </head>
 
 <style>
- 
- .portfolio-title {
-            color:#18d26e;/* Adjust color as needed for contrast */
-        }
 
+.portfolio-details-slider {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .portfolio-details-slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  .portfolio-title {
+    color: #18d26e;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #18d26e;
+  }
   .section-header {
-      color: #18d26e; /* Adjust for contrast */
+    color: #18d26e;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #18d26e;
+  }
+  .portfolio-info {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
 
-
-  .portfolio-info h3, .portfolio-info h4 {
-      color: #18d26e; /* Green color for headers */
+  .key-achievements ul {
+    list-style-type: none;
+    padding-left: 0;
   }
-
-  <style>
-  @media (min-width: 992px) {
-    .portfolio-info {
-      order: -1;
-    }
-    
-    .col-lg-8 {
-      order: 1;
-    }
+  .key-achievements ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
   }
-  
+  .key-achievements ul li i {
+    color: #18d26e;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
 </style>
-</style>
+</head>
 
 <body>
-
-  <main id="main">
-
-   <!-- ======= Portfolio Details ======= -->
-   <div id="portfolio-details" class="portfolio-details">
+<main id="main">
+  <div id="portfolio-details" class="portfolio-details">
     <div class="container">
-
+      <h2 class="portfolio-title text-center">Project Portfolio: Predictive Maintenance for Reciprocating Compressors</h2>
       <div class="row">
-
         <div class="col-lg-8">
-          <h2 class="portfolio-title">Project Portfolio: Predictive Maintenance for Reciprocating Compressors</h2>
-
           <div class="portfolio-details-slider swiper">
             <div class="swiper-wrapper align-items-center">
-
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/gascompressor.jpg" alt="" style="max-width: 100%; height: auto;">
+                <img src="assets/img/portfolio/gascompressor.jpg" alt="Reciprocating Compressor" class="img-fluid">>
               </div>
-
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
         </div>
-
-        <div class="col-lg-4 portfolio-info">
-          <h3>Predictive Maintenance for Reciprocating Compressors</h3>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project Details</h3>
+            <ul>
+              <li><strong>Category:</strong> Machine Learning and Predictive Maintenance</li>
+              <li><strong>Client:</strong> Repsol</li>
+              <li><strong>Project date:</strong> June 2023</li>
+            </ul>
+            <h4 class="section-header">Description</h4>
+            <p>This project focused on implementing a machine learning-based predictive maintenance (PdM) strategy for reciprocating compressors, critical equipment in the gas industry. The main objectives were to avoid breakdowns, optimize maintenance, and improve performance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 key-achievements">
+          <h4 class="section-header">Key Achievements</h4>
           <ul>
-            <li><strong>Category</strong>: Machine Learning and Predictive Maintenance</li>
-            <li><strong>Client</strong>: Repsol</li>
-            <li><strong>Project date</strong>: June 2023</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Data Collection and Preparation:</strong> Processed hourly operational data from multiple compressors over two years, including both normal and failure periods.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Model Development:</strong> Trained 25 unsupervised machine learning models for anomaly detection, including traditional methods (Isolation Forest, PCA, ICA) and deep learning methods (LSTM, Autoencoders, Transformers).</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Severity Classification:</strong> Classified anomalies into four levels – Low, Medium, High, Severe.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Proof of Concept (POC):</strong> Developed a real-time streaming POC integrating sensor data ingestion to dashboard visualization, enabling proactive maintenance and operational improvement.</li>
           </ul>
-
-          <h4>Description:</h4>
-          <p>This project focused on implementing a machine learning-based predictive maintenance (PdM) strategy for reciprocating compressors, critical equipment in the gas industry. The main objectives were to avoid breakdowns, optimize maintenance, and improve performance.</p>
-
-          <h4>Key Achievements:</h4>
-          <ul>
-            <li><strong>Data Collection and Preparation:</strong> Processed hourly operational data from multiple compressors over two years, including both normal and failure periods.</li>
-            <li><strong>Model Development:</strong> Trained 25 unsupervised machine learning models for anomaly detection, including traditional methods (Isolation Forest, PCA, ICA) and deep learning methods (LSTM, Autoencoders, Transformers).</li>
-            <li><strong>Severity Classification:</strong> Classified anomalies into four levels – Low, Medium, High, Severe.</li>
-            <li><strong>Proof of Concept (POC):</strong> Developed a real-time streaming POC integrating sensor data ingestion to dashboard visualization, enabling proactive maintenance and operational improvement.</li>
-          </ul>
-
-          <h4>Results:</h4>
+          <h4 class="section-header">Results</h4>
           <p>Demonstrated the potential to significantly reduce downtime and improve compressor availability through advanced predictive maintenance techniques.</p>
-
           <p>By leveraging machine learning for predictive maintenance, this project showcases the application of advanced data analytics and modeling to enhance the reliability and efficiency of critical industrial equipment.</p>
         </div>
-
       </div>
-
     </div>
-  </div><!-- End Portfolio Details -->
-  </main><!-- End #main -->
+  </div>
+</main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

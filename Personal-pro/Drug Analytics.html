@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Stephanie Gessler - Big Data & Analytics Expert</title>
+  <meta name="description" content="Stephanie Gessler is a seasoned Big Data & Analytics Expert specializing in advanced data analytics, machine learning, and business intelligence solutions. Discover her portfolio, skills, and professional achievements in the field of data science and analytics.">
+  <meta name="keywords" content="Stephanie Gessler, Big Data, Analytics Expert, Data Science, Machine Learning, Business Intelligence, Data Engineering, SQL, Python, Cloud Data Platforms, Data Visualization, Portfolio, Professional Experience">
+  
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -37,90 +38,114 @@
 </head>
 
 <style>
+  .portfolio-details-slider {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .portfolio-details-slider img, .portfolio-details-slider video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
   .portfolio-title {
-      color: #18d26e; /* Adjust color as needed for contrast */
+    color: #18d26e;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #18d26e;
   }
-
   .section-header {
-      color: #18d26e; /* Adjust for contrast */
+    color: #18d26e;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #18d26e;
   }
-
-  .portfolio-info h3, .portfolio-info h4 {
-      color: #18d26e; /* Green color for headers */
+  .portfolio-info {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
-
-  @media (min-width: 992px) {
-    .portfolio-info {
-      order: -1;
-    }
-
-    .col-lg-8 {
-      order: 1;
-    }
+  .key-achievements ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .key-achievements ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+  }
+  .key-achievements ul li i {
+    color: #18d26e;
+    position: absolute;
+    left: 0;
+    top: 5px;
   }
 </style>
 
+
+</head>
+
 <body>
-
-  <main id="main">
-
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-8">
-            <h2 class="portfolio-title">DrugNet: Analyzing Drug Interactions and Chemical Compound Similarities</h2>
-
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Drug1.png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Drug5.png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Drug6.png" alt="" style="max-width: 100%; height: auto;">
-                </div>
-
-                <div class="swiper-slide">
-                  <video src="assets/img/portfolio/Drug_interactions.mp4" muted autoplay style="max-width: 100%; height: auto;" onended="this.onendedHandler();"></video>
-                </div>
-
-                <div class="swiper-slide">
-                  <video src="assets/img/portfolio/Drug2.mp4" muted autoplay style="max-width: 100%; height: auto;" onended="this.onendedHandler();"></video>
-                </div>
+<main id="main">
+  <div id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <h2 class="portfolio-title text-center">DrugNet: Analyzing Drug Interactions and Chemical Compound Similarities</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Drug1.png" alt="DrugNet Visualization" class="img-fluid">
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Drug2.1.png" alt="DrugNet Analysis" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/Drug6.png" alt="Chemical Compounds" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <video src="assets/img/portfolio/Drug_interactions.mp4" muted autoplay class="img-fluid"></video>
+              </div>
+              <div class="swiper-slide">
+                <video src="assets/img/portfolio/Drug2.mp4" muted autoplay class="img-fluid"></video>
+              </div>
             </div>
-
+            <div class="swiper-pagination"></div>
           </div>
-
-          <div class="col-lg-4 portfolio-info">
-            <h3>Drug interactions and chemical compound similarities</h3>
-            <ul>
-              <li><strong>Category</strong>: Deep Learning</li>
-              <li><strong>Client</strong>: IE</li>
-              <li><strong>Project date</strong>: March 2023</li>
-            </ul>
-
-            <h4>Description:</h4>
-            <p>
-              DrugNet is a comprehensive project aimed at analyzing drug interactions and chemical compound similarities to provide valuable business insights. Leveraging graph analytics, this project visualizes the interactions between drugs, categorizes their interactions, and identifies patterns in drug distribution. By creating a multigraph, the project reveals structural similarities between chemical compounds and potential drug interactions, enhancing research, drug discovery, and market analysis.
-            </p>
-
-          </div>
-
         </div>
-
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project Details</h3>
+            <ul>
+              <li><strong>Category:</strong> Network Analytics</li>
+              <li><strong>Client:</strong> IE</li>
+              <li><strong>Project date:</strong> March 2023</li>
+            </ul>
+            <h4 class="section-header">Description</h4>
+            <p>DrugNet is a comprehensive project aimed at analyzing drug interactions and chemical compound similarities to provide valuable business insights. Leveraging graph analytics, this project visualizes the interactions between drugs, categorizes their interactions, and identifies patterns in drug distribution. By creating a multigraph, the project reveals structural similarities between chemical compounds and potential drug interactions, enhancing research, drug discovery, and market analysis.</p>
+          </div>
+        </div>
       </div>
-    </div><!-- End Portfolio Details -->
-  </main><!-- End #main -->
+      <div class="row">
+        <div class="col-lg-12 key-achievements">
+          <h4 class="section-header">Key Features</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Graph Analytics:</strong> Utilizes advanced graph analytics to visualize and analyze drug interactions.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Interaction Categorization:</strong> Categorizes drug interactions to provide clear insights into potential risks and benefits.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Pattern Identification:</strong> Identifies patterns in drug distribution and usage across different demographics and regions.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Multigraph Creation:</strong> Develops a comprehensive multigraph to reveal structural similarities between chemical compounds.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Research Enhancement:</strong> Supports drug discovery and market analysis through data-driven insights.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

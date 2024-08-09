@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Stephanie Gessler</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Stephanie Gessler - Big Data & Analytics Expert</title>
+    <meta name="description" content="Stephanie Gessler is a seasoned Big Data & Analytics Expert specializing in advanced data analytics, machine learning, and business intelligence solutions. Discover her portfolio, skills, and professional achievements in the field of data science and analytics.">
+    <meta name="keywords" content="Stephanie Gessler, Big Data, Analytics Expert, Data Science, Machine Learning, Business Intelligence, Data Engineering, SQL, Python, Cloud Data Platforms, Data Visualization, Portfolio, Professional Experience">
+    
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -30,124 +31,127 @@
     <!-- Custom CSS for this page -->
     <!-- Custom CSS for this page -->
     <style>
-        .portfolio-details .portfolio-details-slider img {
-            width: 60%;
+        .portfolio-details-slider {
+          max-width: 100%;
+          overflow: hidden;
         }
-        .portfolio-details .portfolio-info {
-            padding-top: 45px;
+        .portfolio-details-slider img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
-        @media (max-width: 768px) {
-            .portfolio-details .portfolio-info {
-                width: 100%; /* Full width on small screens */
-                padding: 10px; /* Adjust padding for better spacing */
-            }
+        .portfolio-title {
+          color: #18d26e;
+          font-size: 2.2rem;
+          margin-bottom: 30px;
+          padding-bottom: 15px;
+          border-bottom: 3px solid #18d26e;
         }
-        
-        .portfolio-details .row {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+        .section-header {
+          color: #18d26e;
+          font-size: 1.5rem;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #18d26e;
         }
-
-        .portfolio-details .col-lg-8 {
-            width: 100%;
-        }
-
-        .portfolio-details .col-lg-4 {
-            width: 100%;
-            margin-top: 20px;
-        }
-
         .portfolio-info {
-            width: 80%; /* Ensure it uses full available width */
-            padding: 20px;
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .key-achievements > ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .key-achievements > ul > li {
+            margin-bottom: 20px;
+        }
+        .key-achievements ul ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .key-achievements ul ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .key-achievements ul ul li::before {
+            content: '>';
+            color: #18d26e;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            line-height: 1.5;
         }
 
-        /* Custom list style */
-.custom-list {
-    list-style-type: disc; /* Ensure bullet points are used */
-    padding-left: 20px; /* Indent list items */
-    margin-bottom: 10px; /* Space between list items */
-}
-
-.custom-list li {
-    margin-bottom: 5px; /* Space between list items */
-}
-
-/* Remove default margin for no-space class if needed */
-.no-space {
-    margin: 0;
-    padding: 0;
-}
-
-    </style>
+      </style>
 </head>
+
 <body>
-    <div id="portfolio-details" class="portfolio-details">
-        <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-8">
-                    <h2 class="portfolio-title">Creating a Lakehouse End-to-End Architecture</h2>
-                
-                    <div class="portfolio-details-slider swiper">
-                        <div class="swiper-wrapper align-items-center">
-                            <div class="swiper-slide">
-                                <img src="assets/img/portfolio/lakehouse-end-to-end-architecture.png" alt="Lakehouse Architecture">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 portfolio-info">
-                    <h3>Project Information</h3>
-                    <ul class="custom-list">
-                        <li><strong>Category:</strong> Datalake, Pipeline, Microsoft Fabric</li>
-                        <li><strong>Client:</strong> Viatris</li>
-                        <li><strong>Project Date:</strong> Ongoing</li>
-                        <li><strong>MS Fabric:</strong> <a href="https://www.microsoft.com/de-de/microsoft-fabric" target="_blank">Microsoft Fabric</a></li>
-                    </ul>
-                    <p><strong>Tools MS Fabric Used</strong> <code>Power Automate workflow</code>, <code>Power BI </code>, <code>Synapse Data Science </code>, <code>Synapse Data Engineering  </code>, <code>Synapse Data Warehouse  </code></p>
-                    <p><strong>Description:</strong> In this project, I designed and implemented a robust data architecture using Microsoft's Fabric, comprising both a Lakehouse and a Data Warehouse. My work focused on automating data workflows and integrating advanced logic for improved data management and analysis.</p>
-                    <h3>Key Achievements:</h3>
-                    <ul class="custom-list">
-                        <li><strong>Data Lakehouse and Warehouse Implementation:</strong>
-                            <ul class="custom-list">
-                                <li>Designed and set up a comprehensive Lakehouse and Data Warehouse using Microsoft Fabric.</li>
-                                <li>Ensured efficient data storage and retrieval by organizing data into structured and semi-structured formats.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Automated Data Pipelines:</strong>
-                            <ul class="custom-list">
-                                <li>Developed and optimized data pipelines to automate the refresh and ingestion of data into delta tables.</li>
-                                <li>Streamlined data workflows, reducing manual intervention and ensuring up-to-date data availability.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Power Automate Integration:</strong>
-                            <ul class="custom-list">
-                                <li>Leveraged Power Automate to send automated emails, enhancing communication and alert systems.</li>
-                                <li>Automated routine tasks, significantly improving operational efficiency.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Specialized Data Lakes:</strong>
-                            <ul class="custom-list">
-                                <li>Created dedicated data lakes for different domains, including Pricing and Pharmacy Chain Tables.</li>
-                                <li>Ensured each data lake was tailored to meet the specific needs of its domain, facilitating targeted data analysis.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Advanced Logic Implementation:</strong>
-                            <ul class="custom-list">
-                                <li>Integrated Veeva suggestions to build logic for generating automated recommendations.</li>
-                                <li>Implemented advanced algorithms to provide actionable insights and suggestions based on data trends.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                
+<main id="main">
+  <div id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <h2 class="portfolio-title text-center">Creating a Lakehouse End-to-End Architecture</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/lakehouse-end-to-end-architecture.png" alt="Lakehouse Architecture" class="img-fluid">
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-    </main>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul class="custom-list">
+              <li><strong>Category:</strong> Datalake, Pipeline, Microsoft Fabric</li>
+              <li><strong>Client:</strong> Viatris</li>
+              <li><strong>Project Date:</strong> Ongoing</li>
+              <li><strong>MS Fabric:</strong> <a href="https://www.microsoft.com/de-de/microsoft-fabric" target="_blank">Microsoft Fabric</a></li>
+            </ul>
+            <p><strong>Tools MS Fabric Used</strong> <code>Power Automate workflow</code>, <code>Power BI </code>, <code>Synapse Data Science </code>, <code>Synapse Data Engineering  </code>, <code>Synapse Data Warehouse  </code></p>
+            <h4 class="section-header">Description</h4>
+            <p>In this project, I designed and implemented a robust data architecture using Microsoft's Fabric, comprising both a Lakehouse and a Data Warehouse. My work focused on automating data workflows and integrating advanced logic for improved data management and analysis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 key-achievements">
+            <h4 class="section-header">Key Achievements</h4>
+            <ul>
+                <li><strong><code>Data Lakehouse and Warehouse Implementation:</code></strong>
+                    <ul>
+                        <li>Designed and set up a comprehensive Lakehouse and Data Warehouse using Microsoft Fabric.</li>
+                        <li>Ensured efficient data storage and retrieval by organizing data into structured and semi-structured formats.</li>
+                    </ul>
+                </li>
+                <li><code><strong>Automated Data Pipelines:</strong></code>
+                    <ul>
+                        <li>Developed and optimized data pipelines to automate the refresh and ingestion of data into delta tables.</li>
+                        <li>Streamlined data workflows, reducing manual intervention and ensuring up-to-date data availability.</li>
+                    </ul>
+                </li>
+                <li><code><strong>Power Automate Integration:</strong></code>
+                    <ul>
+                        <li>Leveraged Power Automate to send automated emails, enhancing communication and alert systems.</li>
+                        <li>Automated routine tasks, significantly improving operational efficiency.</li>
+                    </ul>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 
     <!-- Vendor JS Files -->

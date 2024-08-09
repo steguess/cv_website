@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Stephanie Gessler</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Stephanie Gessler - Big Data & Analytics Expert</title>
+    <meta name="description" content="Stephanie Gessler is a seasoned Big Data & Analytics Expert specializing in advanced data analytics, machine learning, and business intelligence solutions. Discover her portfolio, skills, and professional achievements in the field of data science and analytics.">
+    <meta name="keywords" content="Stephanie Gessler, Big Data, Analytics Expert, Data Science, Machine Learning, Business Intelligence, Data Engineering, SQL, Python, Cloud Data Platforms, Data Visualization, Portfolio, Professional Experience">
+    
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -27,74 +28,123 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Custom CSS for this page -->
     <style>
-        .portfolio-details .portfolio-details-slider img {
-            width: 100%;
+        .portfolio-details-slider {
+          max-width: 100%;
+          overflow: hidden;
         }
-        .portfolio-details .portfolio-info {
-            padding-top: 45px;
+        .portfolio-details-slider img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
-        @media (max-width: 768px) {
-            .portfolio-details .portfolio-info {
-                padding-top: 20px;
-            }
-        
-            
+        .portfolio-title {
+          color: #18d26e;
+          font-size: 2.2rem;
+          margin-bottom: 20px;
+          padding-bottom: 15px;
+          border-bottom: 3px solid #18d26e;
         }
-    </style>
-</head>
-
-<body>
-
-    <main id="main">
-
-        <!-- ======= Portfolio Details ======= -->
+        .section-header {
+          color: #18d26e;
+          font-size: 1.5rem;
+          margin-top: 20px;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #18d26e;
+        }
+        .portfolio-info {
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .custom-list {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        .custom-list li {
+          margin-bottom: 10px;
+          padding-left: 20px;
+          position: relative;
+        }
+        .custom-list li::before {
+          content: '>';
+          color: #18d26e;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-weight: bold;
+        }
+        @media (max-width: 991px) {
+          .portfolio-details .col-lg-5 {
+            margin-top: 20px;
+          }
+        }
+      </style>
+    </head>
+    
+    <body>
+      <main id="main">
         <div id="portfolio-details" class="portfolio-details">
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-8">
-                        <h2 class="portfolio-title">Sustainable Development Goals (SDG) Health Dashboard </h2>
-
-                        <div class="portfolio-details-slider swiper">
-                            <div class="swiper-wrapper align-items-center">
-
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/Final dashboard Split 1.png" alt="Dashboard Image">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/Final dashboard Split 2_.png" alt="Dashboard Image">
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-7">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/Final dashboard Split 1.png" alt="Dashboard Image 1" class="img-fluid">
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="portfolio-info">
-                            <h3>Project information</h3>
-                            <ul class="no-space">
-                                <li><strong>Category:</strong> Data Analytics and Visualization</li>
-                                <li><strong>Client:</strong> IE University</li>
-                                <li><strong>Project Date:</strong> January 2023</li>
-                                <li><strong>Project URL:</strong> <a href="https://public.tableau.com/app/profile/stephanie.g.3012/viz/SDGHealth1/FinaldashboardSplit1?publish=yes" target="_blank">SDG Health Part 1</a></li>
-                                <li><strong>Project URL:</strong> <a href="https://public.tableau.com/app/profile/stephanie.g.3012/viz/SDGHealth/FinaldashboardSplit2_?publish=yes" target="_blank">SDG Health Part 2</a></li>
-                              </ul>
-                            <p>The Sustainable Development Goals (SDG) Health Dashboard project focused on analyzing and visualizing global health data to support the SDGs. Utilizing Tableau, the project created interactive dashboards showcasing key health metrics, including health expenditure, mortality rates, disease prevalence, and healthcare access. Data from international health databases was analyzed to identify critical insights and trends. The visualizations, including complex heatmaps, time series charts, and comparative bar charts, highlighted health disparities and provided actionable insights for policymakers, facilitating informed decision-making to improve global health outcomes. This project demonstrated expertise in data collection, statistical analysis, and advanced visualization techniques.</p>
-                        </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/portfolio/Final dashboard Split 2_.png" alt="Dashboard Image 2" class="img-fluid">
                     </div>
-
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-
+              </div>
+    
+              <div class="col-lg-5">
+                <h2 class="portfolio-title">Sustainable Development Goals (SDG) Health Dashboard</h2>
+                
+                <div class="portfolio-info">
+                  <h3>Project Information</h3>
+                  <ul class="custom-list">
+                    <li><strong>Category:</strong> Data Analytics and Visualization</li>
+                    <li><strong>Client:</strong> IE University</li>
+                    <li><strong>Project Date:</strong> January 2023</li>
+                    <li><strong>Project URL (Part 1):</strong> <a href="https://public.tableau.com/app/profile/stephanie.g.3012/viz/SDGHealth1/FinaldashboardSplit1?publish=yes" target="_blank">SDG Health Part 1</a></li>
+                    <li><strong>Project URL (Part 2):</strong> <a href="https://public.tableau.com/app/profile/stephanie.g.3012/viz/SDGHealth/FinaldashboardSplit2_?publish=yes" target="_blank">SDG Health Part 2</a></li>
+                  </ul>
+                </div>
+    
+                <h3 class="section-header">Project Description</h3>
+                <p>The Sustainable Development Goals (SDG) Health Dashboard project focused on analyzing and visualizing global health data to support the SDGs. Utilizing Tableau, the project created interactive dashboards showcasing key health metrics, including health expenditure, mortality rates, disease prevalence, and healthcare access.</p>
+                
+                <h3 class="section-header">Key Features</h3>
+                <ul class="custom-list">
+                  <li>Interactive dashboards showcasing key health metrics related to SDGs</li>
+                  <li>Visualization of health expenditure, mortality rates, disease prevalence, and healthcare access</li>
+                  <li>Complex visualizations including heatmaps, time series charts, and comparative bar charts</li>
+                  <li>Highlighting of health disparities and actionable insights for policymakers</li>
+                </ul>
+    
+                <h3 class="section-header">Technical Highlights</h3>
+                <ul class="custom-list">
+                  <li>Utilized Tableau for data processing and advanced visualization</li>
+                  <li>Analyzed data from international health databases to identify critical insights and trends</li>
+                  <li>Demonstrated expertise in data collection, statistical analysis, and advanced visualization techniques</li>
+                </ul>
+    
+                <h3 class="section-header">Impact</h3>
+                <p>This project facilitated informed decision-making to improve global health outcomes by providing policymakers with clear, actionable insights derived from complex health data. The visualizations effectively communicated critical health trends and disparities, supporting efforts to achieve the Sustainable Development Goals in the health sector.</p>
+              </div>
             </div>
-        </div><!-- End Portfolio Details -->
-
-    </main><!-- End #main -->
-
+          </div>
+        </div>
+      </main>
+    
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

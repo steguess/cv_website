@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Portfolio Details - Personal Bootstrap Template</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Stephanie Gessler - Big Data & Analytics Expert</title>
+    <meta name="description" content="Stephanie Gessler is a seasoned Big Data & Analytics Expert specializing in advanced data analytics, machine learning, and business intelligence solutions. Discover her portfolio, skills, and professional achievements in the field of data science and analytics.">
+    <meta name="keywords" content="Stephanie Gessler, Big Data, Analytics Expert, Data Science, Machine Learning, Business Intelligence, Data Engineering, SQL, Python, Cloud Data Platforms, Data Visualization, Portfolio, Professional Experience">
+    
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -29,78 +30,124 @@
 
     <!-- Custom CSS for this page -->
     <style>
-        .portfolio-details .portfolio-details-slider img {
-            width: 100%;
+        .portfolio-details-slider {
+          max-width: 100%;
+          overflow: hidden;
         }
-        .portfolio-details .portfolio-info {
-            padding-top: 45px;
+        .portfolio-details-slider iframe {
+          width: 100%;
+          height: 600px;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-title {
+          color: #18d26e;
+          font-size: 2.2rem;
+          margin-bottom: 30px;
+          padding-bottom: 15px;
+          border-bottom: 3px solid #18d26e;
+          text-align: center;
+        }
+        .section-header {
+          color: #18d26e;
+          font-size: 1.5rem;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #18d26e;
+        }
+        .portfolio-info {
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .custom-list {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        .custom-list li {
+          margin-bottom: 15px;
+          padding-left: 25px;
+          position: relative;
+        }
+        .custom-list li::before {
+          content: '>';
+          color: #18d26e;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-weight: bold;
         }
         @media (max-width: 768px) {
-            .portfolio-details .portfolio-info {
-                padding-top: 20px;
-            }
-        
-            
+          .portfolio-details-slider iframe {
+            height: 400px;
+          }
         }
-    </style>
-</head>
-
-<body>
-
-    <main id="main">
-
-<!-- ======= Portfolio Details ======= -->
-<div id="portfolio-details" class="portfolio-details">
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-8">
-                <h2 class="portfolio-title">World Bank Health Dashboard</h2>
-
+      </style>
+    </head>
+    
+    <body>
+      <main id="main">
+        <div id="portfolio-details" class="portfolio-details">
+          <div class="container">
+            <h2 class="portfolio-title">World Bank Health Dashboard</h2>
+            
+            <div class="row gy-4">
+              <div class="col-lg-8">
                 <div class="portfolio-details-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-
-                        <!-- Embedded PDF for Page 1 -->
-                        <div class="swiper-slide">
-                            <iframe src="/Users/stephaniegessler/Documents/GitHub/cv_website/Personal-pro/assets/img/portfolio/World_Health_by_Stephanie_Gessler.pdf#page=1&zoom=50&navpanes=0" width="100%" height="800" frameborder="0" allowfullscreen></iframe>
-                        </div>
-
-                        <!-- Embedded PDF for Page 2 -->
-                        <div class="swiper-slide">
-                            <iframe src="/Users/stephaniegessler/Documents/GitHub/cv_website/Personal-pro/assets/img/portfolio/World_Health_by_Stephanie_Gessler.pdf#page=2&zoom=50&navpanes=0" width="100%" height="800" frameborder="0" allowfullscreen></iframe>
-                        </div>
-
-                        <!-- Embedded PDF for Page 3 -->
-                        <div class="swiper-slide">
-                            <iframe src="/Users/stephaniegessler/Documents/GitHub/cv_website/Personal-pro/assets/img/portfolio/World_Health_by_Stephanie_Gessler.pdf#page=3&zoom=50&navpanes=0" width="100%" height="800" frameborder="0" allowfullscreen></iframe>
-                        </div>
-
+                  <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                      <iframe src="/Users/stephaniegessler/Documents/GitHub/cv_website/Personal-pro/assets/img/portfolio/World_Health_by_Stephanie_Gessler.pdf#page=1&zoom=50&navpanes=0" allowfullscreen></iframe>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide">
+                      <iframe src="/Users/stephaniegessler/Documents/GitHub/cv_website/Personal-pro/assets/img/portfolio/World_Health_by_Stephanie_Gessler.pdf#page=2&zoom=50&navpanes=0" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                      <iframe src="/Users/stephaniegessler/Documents/GitHub/cv_website/Personal-pro/assets/img/portfolio/World_Health_by_Stephanie_Gessler.pdf#page=3&zoom=50&navpanes=0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-            </div>
-
-            <div class="col-lg-4">
+              </div>
+    
+              <div class="col-lg-4">
                 <div class="portfolio-info">
-                    <h3>Project information</h3>
-                    <ul class="no-space">
-                        <li><strong>Category:</strong> Data Analytics and Visualization</li>
-                        <li><strong>Client:</strong> IE University</li>
-                        <li><strong>Project Date:</strong> January 2023</li>
-                
-                    </ul>
-                    <p>The World Health Dashboard project focused on analyzing and visualizing global health data to provide insights into various health indicators. Using Google Analytics, the project featured interactive dashboards that illustrated key metrics such as global life expectancy, causes of death, and crude death rates. The dashboards included complex visualizations such as heatmaps, time series charts, and comparative bar charts to highlight trends and disparities in health outcomes across different regions. These visualizations enabled a comprehensive understanding of global health issues and facilitated informed decision-making for improving health policies and strategies. The project demonstrated expertise in data collection, statistical analysis, and advanced visualization techniques.</p>
+                  <h3>Project Information</h3>
+                  <ul class="custom-list">
+                    <li><strong>Category:</strong> Data Analytics and Visualization</li>
+                    <li><strong>Client:</strong> IE University</li>
+                    <li><strong>Project Date:</strong> January 2023</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-
+    
+            <div class="row">
+              <div class="col-lg-12">
+                <h3 class="section-header">Project Description</h3>
+                <p>The World Health Dashboard project focused on analyzing and visualizing global health data to provide insights into various health indicators. Using Google Analytics, the project featured interactive dashboards that illustrated key metrics such as global life expectancy, causes of death, and crude death rates.</p>
+                
+                <h3 class="section-header">Key Features</h3>
+                <ul class="custom-list">
+                  <li>Interactive dashboards illustrating key global health metrics</li>
+                  <li>Complex visualizations including heatmaps, time series charts, and comparative bar charts</li>
+                  <li>Highlighted trends and disparities in health outcomes across different regions</li>
+                  <li>Facilitated informed decision-making for improving health policies and strategies</li>
+                </ul>
+    
+                <h3 class="section-header">Technical Highlights</h3>
+                <ul class="custom-list">
+                  <li>Utilized Google Analytics for data processing and visualization</li>
+                  <li>Demonstrated expertise in data collection and statistical analysis</li>
+                  <li>Implemented advanced visualization techniques for complex data representation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </div>
-</div><!-- End Portfolio Details -->
-
-
-    </main><!-- End #main -->
+      </main>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

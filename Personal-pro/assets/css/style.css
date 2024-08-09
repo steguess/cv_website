@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-/* Added by Bunny, remove for future projects */
+/* Added by Bunny, remove for future projects  */
 .gnext, .gprev {
   display: none;
 }
@@ -1240,3 +1240,4 @@ section .container {
   visibility: hidden !important;
   width: 0 !important;
 }
+
