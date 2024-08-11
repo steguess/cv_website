@@ -1,6 +1,6 @@
 # 🚀Data Science & Analytics Portfolio 
 
-![PersonalPortfolio](Personalpage.png)
+![PersonalPortfolio](personalpage.png)
 
 ## 👋Welcome to my Data Science Journey!
 
