@@ -53,7 +53,8 @@ personal-portfolio/
 The website is deployed using GitHub Pages, providing a seamless integration with the repository for easy updates and maintenance.
 
 ## 🌐 Live Demo
-Experience the live version of the portfolio: [View Portfolio](https://stephaniegessler.github.io/)
+Experience the live version of the portfolio: <a href="https://stephaniegessler.github.io/" target="_blank">View Portfolio</a>
+
 
 
 
