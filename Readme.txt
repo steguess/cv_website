@@ -1,9 +1,5 @@
 # Data Science & Analytics Portfolio 🚀
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=LinkedIn&logoColor=white)](https://www.linkedin.com/in/your-profile)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)](https://github.com/your-username)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-00A98F?style=flat-square&logo=About.me&logoColor=white)](https://your-portfolio-url.com)
-
 ## 👋 Welcome to my Data Science Journey!
 
 ## 🛠️ Technologies Used
