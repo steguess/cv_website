@@ -57,6 +57,7 @@ Experience the live version of the portfolio: [View Portfolio](https://stephanie
 
 
 
+
 ## 🤝 Contributing
 
 While this is a personal project, suggestions and feedback are always welcome. Feel free to open an issue or submit a pull request.
