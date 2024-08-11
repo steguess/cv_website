@@ -289,13 +289,12 @@ if (form) {
 
       if (response.ok) {
         // Show success message
+        thisForm.querySelector('.sent-message').textContent = "Your email has been successfully sent. Thank you!";
         thisForm.querySelector('.sent-message').classList.add('d-block');
         // Reset the form fields
         thisForm.reset();
       } else {
-        return response.json().then(data => {
-          throw new Error(data.error || 'Form submission failed');
-        });
+        throw new Error('Form submission failed');
       }
     })
     .catch((error) => {
@@ -304,13 +303,11 @@ if (form) {
       // Hide loading animation
       thisForm.querySelector('.loading').classList.remove('d-block');
       // Show the error message
-      thisForm.querySelector('.error-message').textContent = error.message;
+      thisForm.querySelector('.error-message').textContent = "An error occurred. Please try again later.";
       thisForm.querySelector('.error-message').classList.add('d-block');
     });
   });
 }
-
-
 
 
 
