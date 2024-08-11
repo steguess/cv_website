@@ -1,8 +1,8 @@
-#Data Science & Analytics Portfolio 🚀
+# 🚀Data Science & Analytics Portfolio 
 
-##Welcome to my Data Science Journey!👋
+## 👋Welcome to my Data Science Journey!
 
-##Technologies Used🛠️
+## Technologies Used🛠️
 
 - **HTML5:** For structuring the content of the website
 - **CSS3:** For styling and layout, including custom animations
