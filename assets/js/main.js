@@ -252,15 +252,62 @@
   new PureCounter();
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const creditButton = document.getElementById('credit-button');
-    const creditContent = document.getElementById('credit-content');
-  
-    if (creditButton && creditContent) {
-      creditButton.addEventListener('click', function() {
-        creditContent.style.display = creditContent.style.display === 'none' ? 'block' : 'none';
-      });
-    }
+document.addEventListener('DOMContentLoaded', function() {
+  const creditButton = document.getElementById('credit-button');
+  const creditContent = document.getElementById('credit-content');
+
+  if (creditButton && creditContent) {
+    creditButton.addEventListener('click', function() {
+      creditContent.style.display = creditContent.style.display === 'none' ? 'block' : 'none';
+    });
+  }
+});
+// Form submission handling
+const form = select('.php-email-form');
+if (form) {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let thisForm = this;
+
+    thisForm.querySelector('.loading').classList.add('d-block');
+    thisForm.querySelector('.error-message').classList.remove('d-block');
+    thisForm.querySelector('.sent-message').classList.remove('d-block');
+
+    let formData = new FormData(thisForm);
+
+    fetch(thisForm.getAttribute('action'), {
+      method: 'POST',
+      body: formData,
+      headers: {'Accept': 'application/json'}
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error(`${response.status} ${response.statusText} ${response.url}`);
+      }
+    })
+    .then(data => {
+      thisForm.querySelector('.loading').classList.remove('d-block');
+      if (data.ok) {
+        thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.reset();
+      } else {
+        throw new Error(data.error || 'Form submission failed and no error message returned from: ' + action);
+      }
+    })
+    .catch((error) => {
+      displayError(thisForm, error);
+    });
   });
+}
+
+function displayError(thisForm, error) {
+  thisForm.querySelector('.loading').classList.remove('d-block');
+  thisForm.querySelector('.error-message').innerHTML = error;
+  thisForm.querySelector('.error-message').classList.add('d-block');
+}
+
 })()
 
