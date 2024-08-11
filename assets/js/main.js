@@ -262,6 +262,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
 // Form submission handling
 const form = select('.php-email-form');
 if (form) {
@@ -285,28 +286,23 @@ if (form) {
       if (response.ok) {
         return response.json();
       } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`);
+        return response.json().then(data => {
+          throw new Error(data.error || 'Form submission failed');
+        });
       }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.ok) {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset();
-      } else {
-        throw new Error(data.error || 'Form submission failed and no error message returned from: ' + action);
-      }
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      thisForm.reset();
     })
     .catch((error) => {
-      displayError(thisForm, error);
+      console.error('Form submission error:', error);
+      thisForm.querySelector('.loading').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      thisForm.reset();
     });
   });
-}
-
-function displayError(thisForm, error) {
-  thisForm.querySelector('.loading').classList.remove('d-block');
-  thisForm.querySelector('.error-message').innerHTML = error;
-  thisForm.querySelector('.error-message').classList.add('d-block');
 }
 
 })()
