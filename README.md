@@ -1,5 +1,7 @@
 # 🚀Data Science & Analytics Portfolio 
 
+![PersonalPortfolio](PersonalPortfolio.png)
+
 ## 👋Welcome to my Data Science Journey!
 
 ## Technologies Used🛠️
