@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Form submission handling
+/// Form submission handling
 const form = document.querySelector('.php-email-form');
 if (form) {
   form.addEventListener('submit', function(event) {
@@ -271,6 +271,7 @@ if (form) {
 
     let thisForm = this;
 
+    // Show loading animation
     thisForm.querySelector('.loading').classList.add('d-block');
     thisForm.querySelector('.error-message').classList.remove('d-block');
     thisForm.querySelector('.sent-message').classList.remove('d-block');
@@ -283,12 +284,14 @@ if (form) {
       headers: { 'Accept': 'application/json' }
     })
     .then(response => {
+      // Hide loading animation
       thisForm.querySelector('.loading').classList.remove('d-block');
 
       if (response.ok) {
+        // Show success message
+        thisForm.querySelector('.sent-message').classList.add('d-block');
+        // Reset the form fields
         thisForm.reset();
-        // Redirect to ThankYou.html after successful submission
-        window.location.href = "ThankYou.html";
       } else {
         return response.json().then(data => {
           throw new Error(data.error || 'Form submission failed');
@@ -296,13 +299,17 @@ if (form) {
       }
     })
     .catch((error) => {
+      // Log the error in the console
       console.log('Form submission error: ', error);
+      // Hide loading animation
       thisForm.querySelector('.loading').classList.remove('d-block');
+      // Show the error message
       thisForm.querySelector('.error-message').textContent = error.message;
       thisForm.querySelector('.error-message').classList.add('d-block');
     });
   });
 }
+
 
 
 
