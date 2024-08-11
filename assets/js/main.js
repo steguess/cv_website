@@ -282,18 +282,13 @@ if (form) {
       body: formData,
       headers: {'Accept': 'application/json'}
     })
-    .then(response => response.json())
-    .then(data => {
+    .then(response => {
       thisForm.querySelector('.loading').classList.remove('d-block');
 
-      if (data.ok) {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
+      if (response.ok) {
         thisForm.reset();
-
-        // If there's a 'next' field, redirect the user
-        if (data.next) {
-          window.location.href = data.next;
-        }
+        // Redirect to thankyou.html after successful submission
+        window.location.href = "thankyou.html";
       } else {
         throw new Error('Form submission failed');
       }
@@ -306,6 +301,7 @@ if (form) {
     });
   });
 }
+
 
 
 })()
