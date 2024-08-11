@@ -288,7 +288,7 @@ if (form) {
       if (response.ok) {
         thisForm.reset();
         // Redirect to thankyou.html after successful submission
-        window.location.href = "thankyou.html";
+        window.location.href = "Thankyou.html";
       } else {
         throw new Error('Form submission failed');
       }
