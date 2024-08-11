@@ -67,10 +67,3 @@ While this is a personal project, suggestions and feedback are always welcome. F
   <tr>
     <td align="center"><a href="https://github.com/steguess"><img src="https://avatars.githubusercontent.com/u/86976901?v=4" width="100px;" alt="Stephanie Gessler"/><br /><sub><b>Stephanie Gessler</b></sub></a><br /><a href="https://github.com/codesandbox/codesandbox-client/commits?author=steguess" title="Frontend Developer">💻</a></td>
 </table>
-
-
-
-
-## 🤝 Contributing
-
-While this is a personal project, suggestions and feedback are always welcome. Feel free to open an issue or submit a pull request.
