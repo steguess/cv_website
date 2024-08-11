@@ -283,18 +283,19 @@ if (form) {
       body: formData,
       headers: { 'Accept': 'application/json' }
     })
-    .then(response => {
+    .then(response => response.json())
+    .then(data => {
       // Hide loading animation
       thisForm.querySelector('.loading').classList.remove('d-block');
 
-      if (response.ok) {
+      if (data.ok) {
         // Show success message
         thisForm.querySelector('.sent-message').textContent = "Your email has been successfully sent. Thank you!";
         thisForm.querySelector('.sent-message').classList.add('d-block');
         // Reset the form fields
         thisForm.reset();
       } else {
-        throw new Error('Form submission failed');
+        throw new Error(data.error || 'Form submission failed');
       }
     })
     .catch((error) => {
@@ -308,7 +309,6 @@ if (form) {
     });
   });
 }
-
 
 
 })()
