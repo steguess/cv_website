@@ -289,8 +289,13 @@ if (form) {
       if (data.ok) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset();
+
+        // If there's a 'next' field, redirect the user
+        if (data.next) {
+          window.location.href = data.next;
+        }
       } else {
-        throw new Error(data.message || 'Form submission failed');
+        throw new Error('Form submission failed');
       }
     })
     .catch((error) => {
