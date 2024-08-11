@@ -53,11 +53,6 @@ personal-portfolio/
 The website is deployed using GitHub Pages, providing a seamless integration with the repository for easy updates and maintenance.
 
 ## 🌐 Live Demo
-
-Experience the live version of the portfolio:
-
-## 🌐 Live Demo
-
 Experience the live version of the portfolio:
 
 [![View Portfolio](https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge&logo=firefox)](https://stephaniegessler.github.io/)
