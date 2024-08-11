@@ -286,15 +286,17 @@ if (form) {
       if (response.ok) {
         return response.json();
       } else {
-        return response.json().then(data => {
-          throw new Error(data.error || 'Form submission failed');
-        });
+        throw new Error(`${response.status} ${response.statusText}`);
       }
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.add('d-block');
-      thisForm.reset();
+      if (data.ok) {
+        thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
     })
     .catch((error) => {
       console.error('Form submission error:', error);
