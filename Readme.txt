@@ -56,7 +56,12 @@ The website is deployed using GitHub Pages, providing a seamless integration wit
 
 Experience the live version of the portfolio:
 
-[**View Portfolio Website**](https://stephaniegessler.github.io/)
+## 🌐 Live Demo
+
+Experience the live version of the portfolio:
+
+[![View Portfolio](https://img.shields.io/badge/View-Portfolio-blue?style=for-the-badge&logo=firefox)](https://stephaniegessler.github.io/)
+
 
 
 ## 🤝 Contributing
