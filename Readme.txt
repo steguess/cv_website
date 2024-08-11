@@ -52,9 +52,21 @@ personal-portfolio/
 
 The website is deployed using GitHub Pages, providing a seamless integration with the repository for easy updates and maintenance.
 
-## 🌐 Live Demo
+## Live Demo 🌐
 Experience the live version of the portfolio: <a href="https://stephaniegessler.github.io/" target="_blank">View Portfolio</a>
 
+
+## 🤝 Contributing
+
+While this is a personal project, suggestions and feedback are always welcome. Feel free to open an issue or submit a pull request.
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/steguess"><img src="https://avatars.githubusercontent.com/u/86976901?v=4" width="100px;" alt="Stephanie Gessler"/><br /><sub><b>Stephanie Gessler</b></sub></a><br /><a href="https://github.com/codesandbox/codesandbox-client/commits?author=steguess" title="Frontend Developer">💻</a></td>
+</table>
 
 
 
