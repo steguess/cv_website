@@ -282,20 +282,14 @@ if (form) {
       body: formData,
       headers: {'Accept': 'application/json'}
     })
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        throw new Error(`${response.status} ${response.statusText}`);
-      }
-    })
+    .then(response => response.json())
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.ok) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset();
       } else {
-        throw new Error('Form submission failed');
+        throw new Error(data.error || 'Form submission failed');
       }
     })
     .catch((error) => {
