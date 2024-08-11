@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Form submission handling
-const form = select('.php-email-form');
+const form = document.querySelector('.php-email-form');
 if (form) {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -280,17 +280,19 @@ if (form) {
     fetch(thisForm.getAttribute('action'), {
       method: 'POST',
       body: formData,
-      headers: {'Accept': 'application/json'}
+      headers: { 'Accept': 'application/json' }
     })
     .then(response => {
       thisForm.querySelector('.loading').classList.remove('d-block');
 
       if (response.ok) {
         thisForm.reset();
-        // Redirect to thankyou.html after successful submission
-        window.location.href = "Thankyou.html";
+        // Redirect to ThankYou.html after successful submission
+        window.location.href = "ThankYou.html";
       } else {
-        throw new Error('Form submission failed');
+        return response.json().then(data => {
+          throw new Error(data.error || 'Form submission failed');
+        });
       }
     })
     .catch((error) => {
@@ -301,6 +303,7 @@ if (form) {
     });
   });
 }
+
 
 
 
