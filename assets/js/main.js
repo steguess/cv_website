@@ -288,22 +288,26 @@ if (form) {
       // Hide loading animation
       thisForm.querySelector('.loading').classList.remove('d-block');
 
+      // Always hide the error message
+      thisForm.querySelector('.error-message').classList.remove('d-block');
+
+      // If Formspree says it's okay, show success message
       if (data.ok) {
-        // Show success message
         thisForm.querySelector('.sent-message').textContent = "Your email has been successfully sent. Thank you!";
         thisForm.querySelector('.sent-message').classList.add('d-block');
         // Reset the form fields
         thisForm.reset();
       } else {
-        throw new Error(data.error || 'Form submission failed');
+        // If not okay, log the error but don't show it to the user
+        console.log('Form submission issue:', data);
       }
     })
     .catch((error) => {
       // Log the error in the console
-      console.log('Form submission error: ', error);
+      console.log('Form submission error:', error);
       // Hide loading animation
       thisForm.querySelector('.loading').classList.remove('d-block');
-      // Show the error message
+      // In this case, we'll show an error message to the user
       thisForm.querySelector('.error-message').textContent = "An error occurred. Please try again later.";
       thisForm.querySelector('.error-message').classList.add('d-block');
     });
