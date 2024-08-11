@@ -16,19 +16,33 @@
 ## 🏗️ Project Structure
 
 personal-portfolio/
+
 ├── assets/
+
 │ ├── css/
+
 │ │ └── style.css
+
 │ ├── js/
+
 │ │ └── main.js
+
 │ ├── img/
+
 │ │ └── (project images)
+
 │ └── vendor/
+
 │ ├── bootstrap/
+
 │ ├── jquery/
+
 │ └── ...
+
 ├── index.html
+
 ├── project-details.html
+
 └── README.md
 
 
