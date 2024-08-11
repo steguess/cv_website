@@ -251,4 +251,16 @@
    */
   new PureCounter();
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const creditButton = document.getElementById('credit-button');
+    const creditContent = document.getElementById('credit-content');
+  
+    if (creditButton && creditContent) {
+      creditButton.addEventListener('click', function() {
+        creditContent.style.display = creditContent.style.display === 'none' ? 'block' : 'none';
+      });
+    }
+  });
 })()
+
