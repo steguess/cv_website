@@ -1,5 +1,7 @@
 # 🚀Data Science & Analytics Portfolio 
 
+<img src="personalpage.png" width="400">
+
 ## 👋Welcome to my Data Science Journey!
 
 ## Technologies Used🛠️
@@ -14,21 +16,33 @@
 ## 🏗️ Project Structure
 
 personal-portfolio/
-│
+
 ├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   ├── img/
-│   │   └── (project images)
-│   └── vendor/
-│       ├── bootstrap/
-│       ├── jquery/
-│       └── ...
-│
+
+│ ├── css/
+
+│ │ └── style.css
+
+│ ├── js/
+
+│ │ └── main.js
+
+│ ├── img/
+
+│ │ └── (project images)
+
+│ └── vendor/
+
+│ ├── bootstrap/
+
+│ ├── jquery/
+
+│ └── ...
+
 ├── index.html
+
 ├── project-details.html
+
 └── README.md
 
 
